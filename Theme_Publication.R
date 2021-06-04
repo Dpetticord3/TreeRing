@@ -1,4 +1,3 @@
-
 theme_Publication <- function(base_size=14, base_family="helvetica") {
   library(grid)
   library(ggthemes)
@@ -18,10 +17,10 @@ theme_Publication <- function(base_size=14, base_family="helvetica") {
             panel.grid.major = element_line(colour="#f0f0f0"),
             panel.grid.minor = element_blank(),
             legend.key = element_rect(colour = NA),
-            legend.position = "right",
-            legend.direction = "vertical",
-            legend.key.size= unit(0.6, "cm"),
-            legend.margin = unit(0, "cm"),
+            legend.position = "bottom",
+            legend.direction = "horizontal",
+            legend.key.size= unit(0.2, "cm"),
+            margin = unit(0, "cm"),
             legend.title = element_text(face="italic"),
             plot.margin=unit(c(10,5,5,5),"mm"),
             strip.background=element_rect(colour="#f0f0f0",fill="#f0f0f0"),
@@ -41,3 +40,4 @@ scale_colour_Publication <- function(...){
   discrete_scale("colour","Publication",manual_pal(values = c("#386cb0","#fdb462","#7fc97f","#ef3b2c","#662506","#a6cee3","#fb9a99","#984ea3","#ffff33")), ...)
   
 }
+
