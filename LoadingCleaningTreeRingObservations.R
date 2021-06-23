@@ -1,3 +1,4 @@
+
 Climate = na.omit(ClimateRecordNS) %>%
   group_by(Year) %>%
   filter(n()==12) 
