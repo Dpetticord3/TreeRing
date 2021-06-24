@@ -1,5 +1,5 @@
 #climate data processing
-ClimateRecordNS=read.csv("D:/GithubRepos/TreeRing/climateRecordNakhonSawan.csv")
+ClimateRecordNS=read.csv("D:/00_Work/Tree Ring/Github/TreeRing/climateRecordNakhonSawan.csv")
 
 Climate = na.omit(ClimateRecordNS) %>%
   group_by(Year) %>%
@@ -72,7 +72,7 @@ VDS_Data_Climate = merge(VDS_Data_Climate, VDS_Data, c("Tree_code", "size", "Spe
 
 VDS_Data_Ax = VDS_Data_Climate %>%
   filter(Species== "Afzelia_xylocarpa")
-
+VDS_Data_
 
 Ax_Climate = merge(x, VDS_Data_Ax, by = c("Tree_code", "size", "Year"))
 
