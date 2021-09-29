@@ -1,6 +1,8 @@
-theme_Publication <- function(base_size=14, base_family="helvetica") {
+theme_Publication <- function(base_size=13, base_family="Garamond") {
   library(grid)
   library(ggthemes)
+  library(gridExtra)
+  windowsFonts("Garamond" = windowsFont("Garamond"))
   (theme_foundation(base_size=base_size, base_family=base_family)
     + theme(plot.title = element_text(face = "bold",
                                       size = rel(1.2), hjust = 0.5),

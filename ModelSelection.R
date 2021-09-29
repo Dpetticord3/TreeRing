@@ -131,7 +131,7 @@ AMC_all = lm(Ci~., data = AfzeliaMeliaChukrasia)
 AMC_both <- step(AMC_intercept_only, direction='both', scope=formula(AMC_all), trace=0)
 AMC_both$anova
 AMC_both$coefficients
-ggplotRegression(lm(Ci~Ca+HottestMonthMax, data = AfzeliaMeliaChukrasia))
+ggplotRegression(lm(Ci~Ca+HottestMonthTMAX, data = AfzeliaMeliaChukrasia))
 ###########################Afzelia_Melia_Chukrasia_US
 AMC_US_intercept_only = lm(Ci~Ca, data = AfzeliaMeliaChukrasia_US)
 AMC_US_all = lm(Ci~., data = AfzeliaMeliaChukrasia_US)

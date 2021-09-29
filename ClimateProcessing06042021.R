@@ -66,6 +66,8 @@ VDS_Data_Climate = x %>%
   mutate(COOL_Seasonality = CoolestMonthTAVG/TotalAnnualTemperature)
 
 VDS_Data_Climate = merge(VDS_Data_Climate, VDS_Data, c("Tree_code", "size", "Species","Year"))
+
+write.csv(VDS_Data_Climate, "VDS_Data_Climate_YearIncluded.csv")
 #######################
 #########################
 
